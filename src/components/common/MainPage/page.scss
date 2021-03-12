@@ -1,0 +1,46 @@
+.components.MainPage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  > .Top {
+    position: relative;
+    z-index: 2;
+  }
+  > .Content {
+    position: relative;
+    z-index: 1;
+  }
+  > .Bottom {
+    align-items: center;
+    padding: 0.02rem 0;
+    border-top: 1px solid #eee;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    > div {
+      text-align: center;
+      font-size: 0;
+      > a {
+        display: inline-block;
+        font-size: 0;
+        white-space: nowrap;
+        > * {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 0.18rem;
+        }
+        > img {
+          height: 0.16rem;
+          margin-top: 0.02rem;
+        }
+        > span {
+          font-size: 0.13rem;
+          color: #999;
+          &:only-child {
+            line-height: 0.36rem;
+          }
+        }
+      }
+    }
+  }
+}
